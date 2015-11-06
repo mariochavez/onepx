@@ -1,0 +1,3 @@
+user:
+  email: 'user@mail.com'
+  password_digest: 'pa$$word'

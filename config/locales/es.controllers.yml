@@ -1,0 +1,4 @@
+es:
+  registration:
+    create:
+      welcome: 'Bienvenido %{email}'

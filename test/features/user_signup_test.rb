@@ -30,7 +30,7 @@ class UserSignupTest < Capybara::Rails::TestCase
     end
 
     assert_content 'Por favor corrija los siguientes errores'
-    assert all('.error-field'), 2
+    assert_equal all('.error-field').count, 2
     refute_content 'Bienvenido'
   end
 end

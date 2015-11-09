@@ -6,6 +6,8 @@ libro [*Aprendiendo Ruby on Rails*](http://www.railsenespanol.co)
 <img
 src="https://cloud.githubusercontent.com/assets/59967/11045989/3e8278a4-86f0-11e5-924e-6d0f1981ebad.jpg" align="center" width="350" alt="Aprendiendo Ruby on Rails" >
 
+[Comprar el libro](http://bit.ly/railsenespanol)
+
 ## Early Access
 El ilibro está disponible en modo Early Access, el cuál permite
 comprar por anticipado y ayudar a fondear el desarrollo de libro,
@@ -51,6 +53,8 @@ Incluyendo los 2 primeros capítulos en línea.
 - Registro de usuarios, nuestra primera funcionalidad
 - Escribiendo nuestras primeras pruebas
 - Conclusiones
+
+[Comprar el libro](http://bit.ly/railsenespanol)
 
 ## Licencia
 

@@ -21,6 +21,6 @@ group :development, :test do
   gem 'byebug'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
-  gem 'selenium-webdriver'
+  gem 'capybara-webkit'
   gem 'launchy'
 end

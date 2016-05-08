@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class RegistrationController < ApplicationController
   def new
     @user = User.new
@@ -8,15 +9,16 @@ class RegistrationController < ApplicationController
 
     if @user.save
       return redirect_to root_path,
-        notice: t('.welcome', email: @user.email)
+                         notice: t(".welcome", email: @user.email)
     end
 
     render :new
   end
 
   private
+
   def secure_params
     params.require(:user)
-      .permit(:email, :password, :password_confirmation)
+          .permit(:email, :password, :password_confirmation)
   end
 end

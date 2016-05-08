@@ -12,15 +12,16 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry-rails'
+  gem 'pry-rails', require: false
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
   gem 'byebug'
+  gem 'capybara-webkit'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
-  gem 'capybara-webkit'
   gem 'launchy'
+  gem 'rubocop', require: false
 end

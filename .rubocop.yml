@@ -1,0 +1,36 @@
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+    - "spec/fixtures/**/*"
+    - "tmp/**/*"
+    - "db/**/*"
+    - "bin/**/*"
+    - "config.ru"
+    - "Gemfile"
+    - "Rakefile"
+    - "config/**/*"
+  TargetRubyVersion: 2.3
+
+  DisplayCopNames: true
+  ExtraDetails: true
+
+Rails:
+  Enabled: true
+
+Style/Encoding:
+  EnforcedStyle: when_needed
+  Enabled: true
+  AutoCorrectEncodingComment: "# encoding: utf-8"
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: when_needed
+
+StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - "config/**/*"

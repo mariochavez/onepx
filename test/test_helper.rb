@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 ENV["RAILS_ENV"] = "test"
 require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
@@ -10,15 +11,18 @@ require "minitest/rails/capybara"
 # Uncomment for awesome colorful output
 # require "minitest/pride"
 
-class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
-  # Add more helper methods to be used by all tests here...
+module ActiveSupport
+  class TestCase
+    # Setup all fixtures in test/fixtures/*.yml for all tests in
+    # alphabetical order.
+    fixtures :all
+    # Add more helper methods to be used by all tests here...
+  end
 end
 
 Capybara.javascript_driver = :webkit
 
 Capybara::Webkit.configure do |config|
-   config.block_unknown_urls
-   config.skip_image_loading
+  config.block_unknown_urls
+  config.skip_image_loading
 end

@@ -35,10 +35,10 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "invalid user with short password" do
-    user = User.new.tap do |m|
-      m.email = "test@mail.com"
-      m.password = "pa$$"
-      m.password_confirmation = "pa$$"
+    user = User.new.tap do |model|
+      model.email = "test@mail.com"
+      model.password = "pa$$"
+      model.password_confirmation = "pa$$"
     end
 
     refute_equal user.valid?, true

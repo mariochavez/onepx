@@ -18,6 +18,8 @@ group :development do
 end
 
 group :development, :test do
+  gem 'brakeman', require: false
+  gem 'bundler-audit', require: false
   gem 'byebug'
   gem 'capybara-webkit'
   gem 'minitest-rails'

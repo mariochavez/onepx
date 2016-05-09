@@ -23,5 +23,6 @@ group :development, :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'launchy'
+  gem 'reek', require: false
   gem 'rubocop', require: false
 end

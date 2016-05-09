@@ -25,6 +25,10 @@ group :development, :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'launchy'
+  gem 'pronto'
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-reek', require: false
+  gem 'pronto-rubocop', require: false
   gem 'reek', require: false
   gem 'rubocop', require: false
 end

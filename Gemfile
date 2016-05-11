@@ -3,24 +3,32 @@ source 'https://rubygems.org'
 gem 'bcrypt'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'turbolinks', github: 'rails/turbolinks'
+gem 'turbolinks', github: 'turbolinks/turbolinks-rails'
 gem 'pg'
 gem 'pretty_formatter'
 gem 'puma'
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.6'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry-rails'
+  gem 'pry-rails', require: false
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
+  gem 'brakeman', require: false
+  gem 'bundler-audit', require: false
   gem 'byebug'
+  gem 'capybara-webkit'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
-  gem 'selenium-webdriver'
   gem 'launchy'
+  gem 'pronto'
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-reek', require: false
+  gem 'pronto-rubocop', require: false
+  gem 'reek', require: false
+  gem 'rubocop', require: false
 end

@@ -54,6 +54,20 @@ Incluyendo los 2 primeros capítulos en línea.
 - Escribiendo nuestras primeras pruebas
 - Conclusiones
 
+### Capítulo 5 - Herramientas de apoyo en el desarrollo con Ruby on Rails
+- Integración continua
+- Configuración de TravisCI como servidor de integración continua
+- Escribiendo código con estilo
+- Eliminando los malos olores de nuestro código
+- Escribiendo código seguro
+- Integrando las herramientas en el flujo de trabajo
+- Conclusiones
+
+### Capítulo 6 - Actualizando nuestra aplicación a Ruby on Rails 5
+- Ruby on rails 5
+- Actualizando la aplicación a Ruby on Rails 5
+- Conclusiones
+
 [Comprar el libro](http://bit.ly/railsenespanol)
 
 ## Licencia

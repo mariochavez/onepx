@@ -1,1 +1,20 @@
-<h2>Home</h2>
+<div class="home">
+  <section class="hero">
+    <div class="background"></div>
+    <div class="content">
+      <div class="center">
+        <div class="text">
+          <div class="wrap">
+            <h1><%= t(".hero.title") %></h1>
+            <p><%= t(".hero.subtitle") %></p>
+            <%= link_to t(".hero.join"), signup_path, class: "pure-button pure-button-primary" %>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+  </section>
+</div>

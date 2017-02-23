@@ -1,21 +1,23 @@
-<h3><%= t('.title') %></h3>
-<%= form_for @user, url: registration_path do |form| %>
-  <%- if @user.errors.any? %>
-    <div class='form-error-message'><%= t('form.error.message') %></div>
-  <% end %>
-  <div class='field <%= set_error_class(form.object, :email) %>'>
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-  <div class='field <%= set_error_class(form.object, :password) %>'>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
-  <div class='field <%= set_error_class(form.object, :password_confirmation) %>'>
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation %>
-  </div>
-  <div class='action'>
-    <%= form.submit %>
-  </div>
+<%= form_for @user, url: registration_path, html: { class: "pure-form pure-form-stacked" } do |form| %>
+  <h1><%= t('.title') %></h1>
+  <fieldset>
+    <%- if @user.errors.any? %>
+      <div class='form-error-message'><%= t('form.error.message') %></div>
+    <% end %>
+    <div class='field <%= set_error_class(form.object, :email) %>'>
+      <%= form.label :email %>
+      <%= form.text_field :email, maxlength: 45 %>
+    </div>
+    <div class='field <%= set_error_class(form.object, :password) %>'>
+      <%= form.label :password %>
+      <%= form.password_field :password, maxlength: 20 %>
+    </div>
+    <div class='field <%= set_error_class(form.object, :password_confirmation) %>'>
+      <%= form.label :password_confirmation %>
+      <%= form.password_field :password_confirmation, maxlength: 20 %>
+    </div>
+    <div class='action'>
+      <%= form.submit class: "pure-button pure-button-primary" %>
+    </div>
+  </fieldset>
 <% end %>

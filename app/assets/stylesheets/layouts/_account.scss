@@ -1,0 +1,14 @@
+body {
+  background-color: $background-color;
+}
+
+header {
+  text-align: center;
+  margin-top: 2em;
+}
+
+form {
+  background-color: $white-color;
+  border: 1px solid $border-color;
+  margin-top: 3em !important;
+}

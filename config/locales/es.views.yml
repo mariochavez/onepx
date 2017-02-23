@@ -1,13 +1,20 @@
 es:
   registration:
     new:
-      title: 'Crear una cuenta'
+      title: 'Únete a onepx'
 
   helpers:
     submit:
       user:
-        create: 'Crear cuenta'
+        create: 'Unirse'
 
   form:
     error:
       message: 'Por favor corrija los siguientes errores'
+
+  home:
+    index:
+      hero:
+        title: "Aprendiendo Ruby on Rails 5."
+        subtitle: "onepx es un proyecto en Ruby on Rails 5, parte del libro Aprendiendo Ruby on Rails 5."
+        join: "Unirse"

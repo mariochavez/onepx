@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class RegistrationController < ApplicationController
+  layout "account"
+
   def new
     @user = User.new
   end

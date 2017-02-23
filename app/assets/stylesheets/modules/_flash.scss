@@ -1,0 +1,31 @@
+@mixin flash {
+  box-sizing: border-box;
+  color: $white-color;
+  font-weight: lighter;
+  height: 35px;
+  overflow-y: hidden;
+  padding: 8px 20px;
+  position: absolute;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  top: 50px;
+  width: 100%;
+  z-index: 2000;
+
+  p {
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+  }
+}
+
+.flash-notice {
+  background-color: $notice-color;
+  @include flash;
+}
+
+.flash-close {
+  height: 0px;
+  padding: 0px;
+}

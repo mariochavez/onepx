@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OnePx</title>
+    <title>onepx</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
 
+    <header class="navbar">
+      <%= image_tag "onepx-tiny.png", class: "logo" %>
+    </header>
+
     <%- if flash.notice.present? %>
       <div class='flash-notice'>
-        <%= flash.notice %>
+        <p><%= flash.notice %></p>
       </div>
     <%- end %>
 

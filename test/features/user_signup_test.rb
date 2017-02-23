@@ -6,7 +6,7 @@ class UserSignupTest < Capybara::Rails::TestCase
   test "navigate to /signup and see a registration form" do
     visit signup_path
 
-    assert_content page, "Crear una cuenta"
+    assert_content page, "Únete a onepx Correo electrónico Contraseña Confirmar contraseña"
     assert_selector page, '#new_user'
   end
 
@@ -18,7 +18,7 @@ class UserSignupTest < Capybara::Rails::TestCase
       fill_in "Contraseña", with: "password"
       fill_in "Confirmar contraseña", with: "password"
 
-      click_button "Crear cuenta"
+      click_button "Unirse"
     end
 
     assert_content "Bienvenido newuser@mail.com"
@@ -28,7 +28,7 @@ class UserSignupTest < Capybara::Rails::TestCase
     visit signup_path
 
     within('#new_user') do
-      click_button "Crear cuenta"
+      click_button "Unirse"
     end
 
     assert_content "Por favor corrija los siguientes errores"

@@ -68,6 +68,11 @@ Incluyendo los 2 primeros capítulos en línea.
 - Actualizando la aplicación a Ruby on Rails 5
 - Conclusiones
 
+### Capítulo 7 - Trabajando con recursos Web en Rails
+- Asset Pipeline
+- Trabajando con recursos web
+- Conclusiones
+
 [Comprar el libro](http://bit.ly/railsenespanol)
 
 ## Licencia

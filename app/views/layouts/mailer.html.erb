@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+      }
+      a {
+        color: #337ab7;
+        text-decoration: none;
+      },
+      a:hover {
+        color: #4face1;
+      }
+      table {
+        margin: 0 auto;
+        width: 960px;
+      }
+      th, .footer {
+        text-align: center;
+      }
+      th {
+        padding: 16px;
+      }
+      .footer {
+        padding-top: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <%= link_to root_url do %>
+              <%= image_tag 'onepx-tiny.png' %>
+            <% end %>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <%= yield %>
+          </td>
+        </tr>
+        <tr>
+          <td class='footer'>
+            <%= link_to root_url do %>
+              <%= t('.footer', year: Date.today.year) %>
+            <% end %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

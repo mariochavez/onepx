@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bcrypt'
 gem 'coffee-rails', '~> 4.2.1'
+gem 'delayed_job_active_record'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'pg'

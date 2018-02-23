@@ -13,5 +13,6 @@ module OnePx
     # -- all .rb files in that directory are automatically loaded.
 
     config.i18n.default_locale = :es
+    config.active_job.queue_adapter = :delayed_job
   end
 end

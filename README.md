@@ -73,6 +73,11 @@ Incluyendo los 2 primeros capítulos en línea.
 - Trabajando con recursos web
 - Conclusiones
 
+### Capítulo 8 - Envío de correos electrónicos y procesos asíncronos
+- Trabajando con ActionMailer
+- Trabajando con ActiveJob
+- Conclusiones
+
 [Comprar el libro](http://bit.ly/railsenespanol)
 
 ## Licencia

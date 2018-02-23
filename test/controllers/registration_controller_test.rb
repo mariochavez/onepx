@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "test_helper"
 
 class RegistrationControllerTest < ActionController::TestCase
@@ -9,15 +10,19 @@ class RegistrationControllerTest < ActionController::TestCase
   end
 
   test "POST /create without params" do
-    post :create, params: { user: { email: "" } }
+    assert_no_difference "ActionMailer::Base.deliveries.size" do
+      post :create, params: { user: { email: "" } }
+    end
 
     assert_response :success
   end
 
   test "POST /create with valid params" do
-    post :create, params: { user: { email: "newuser@mail.com",
-                          password: "pa$$word",
-                          password_confirmation: "pa$$word" } }
+    assert_difference "ActionMailer::Base.deliveries.size", 1 do
+      post :create, params: { user: { email: "newuser@mail.com",
+                                      password: "pa$$word",
+                                      password_confirmation: "pa$$word" } }
+    end
 
     assert_redirected_to root_path
   end
